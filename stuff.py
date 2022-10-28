@@ -32,5 +32,22 @@ def spacing(list_input: list) -> bool:
     if spacing_correct != False:
         return True
 
+print(spacing([0, 10, 20, 30]))
 
-p
+   
+
+## Q 10
+def count_vowels(string_input: str) -> int:
+    vowels = ["a", "e", "i", "o", "u"]
+
+    string_input = string_input.lower()
+
+    total = 0
+
+    for vowel in vowels:
+        total += string_input.count(vowel)
+
+    return total
+
+
+print(count_vowels("Celebration"))
